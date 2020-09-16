@@ -2,7 +2,7 @@
 
 This is the project you get when you run `gridsome create new-project`.
 
-### 1. Install Gridsome CLI tool if you don't have
+### 1. Install Gridsome CLI tool if you don't have (+ dependencies)
 
 * `npm install --global @gridsome/cli`
 * `npm install --global @gridsome/source-filesystem`

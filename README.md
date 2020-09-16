@@ -5,6 +5,8 @@ This is the project you get when you run `gridsome create new-project`.
 ### 1. Install Gridsome CLI tool if you don't have
 
 `npm install --global @gridsome/cli`
+`npm install --global @gridsome/source-filesystem`
+`npm install --global @gridsome/transformer-remark`
 
 ### 2. Create a Gridsome project
 

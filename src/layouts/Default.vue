@@ -1,50 +1,64 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
-    </header>
-    <slot/>
-  </div>
+  <main class="layout" role="main">
+    <Header />
+    <slot /> <!-- Page/Template will be inserted here -->
+    <Footer />
+  </main>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
+<script>
+import Header from "./partials/Header"
+import Footer from "./partials/Footer"
+
+export default {
+  components: {
+    Header,
+    Footer
   }
 }
-</static-query>
+</script>
 
 <style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
+  :root {
+    --text-color: #333;
+    --border-color: #fecd43;
+    --bkg-color: white;
+    --line-color: #cdc8c5;
+  }
+  :root [data-theme="sepia"] {
+    --text-color: #433422;
+    --border-color: #00a672;
+    --bkg-color: #f1e7d0;
+    --line-color: #00a672;
+  }
+  :root [data-theme="dark"] {
+    --text-color: #ffffff;
+    --border-color: #fecd43;
+    --bkg-color: #030200;
+    --line-color: #fecd43;
+  }
+  body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    border: 15px solid var(--border-color);
+    min-height: 100vh;
+    background-color: var(--bkg-color);
+    color: var(--text-color);
+    transition: background 0.3s;
+  }
+  .layout {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .link {
+    border: 2px dashed var(--border-color);
+    padding: 7px;
+    color: var(--text-color);
+    text-decoration: none;
+  }
 </style>

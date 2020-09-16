@@ -43,11 +43,11 @@ export default {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    border: 15px solid var(--border-color);
+    /* border: 15px solid var(--border-color); */
     min-height: 100vh;
     background-color: var(--bkg-color);
     color: var(--text-color);
-    transition: background 0.3s;
+    transition: background 0.5s;
   }
   .layout {
     max-width: 760px;

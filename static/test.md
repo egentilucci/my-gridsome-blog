@@ -1,7 +1,1 @@
-test
-
-check the author!
-
-secondo test! per user.name dopo aver impostato git config --global user.name "Culdred"
-
-e tre
+la questione account + permessi sembra fixed

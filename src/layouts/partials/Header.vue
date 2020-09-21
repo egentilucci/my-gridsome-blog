@@ -25,8 +25,6 @@ export default {
     left: 0;
     margin: auto;
     width: 100%;
-    border: 1px solid rgb(111,41,97);
-    border-radius: .5em;
   }
   .nav {
     justify-content: space-between;
@@ -34,17 +32,11 @@ export default {
     display: flex;
     align-items: center;
     margin: 0px 68px;
-    border: 1px solid rgb(111,41,97);
-    border-radius: .5em;
   }
   .logo {
     padding: 5px;
-    border: 1px solid rgba(111,41,97,.5);
-    border-radius: .5em;
   }
   .toggle-theme {
     padding: 5px;
-    border: 1px solid rgba(111,41,97,.5);
-    border-radius: .5em;
   }
 </style>

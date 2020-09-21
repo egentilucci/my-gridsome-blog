@@ -6,7 +6,7 @@
     <h3 class="title" v-html="post.title" />
     <p class="description" v-html="post.description" />
     <b>{{ post.timeToRead }} min read</b> &nbsp;
-    <g-link :to="post.path" class="read"
+    <g-link :to="post.path" class="link"
       >Read More
       <span class="visuallyhidden">about {{ post.title }}</span></g-link
     >
@@ -27,12 +27,13 @@ export default {
 .date {
   font-weight: 300;
 }
+/* duplicated style in blog template, substituted with class "link" declared in Default.vue
 .read {
-  padding: 7px;
+  padding: 5px;
   color: var(--text-color);
   text-decoration: none;
-  border: 2px dashed var(--border-color);
-}
+  border: 2px solid var(--border-color);
+} */
 .visuallyhidden {
   position: absolute !important;
   width: 1px;

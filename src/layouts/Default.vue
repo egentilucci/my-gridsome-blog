@@ -56,7 +56,7 @@ export default {
     padding-right: 20px;
   }
   .link {
-    border: 2px dashed var(--border-color);
+    border: 2px solid var(--border-color);
     padding: 5px;
     color: var(--text-color);
     text-decoration: none;

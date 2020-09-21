@@ -1,6 +1,6 @@
 <template>
 
-  <main class="check-border" role="main">
+  <main class="" role="main">
   
     <div><Header /></div>
     
@@ -19,7 +19,7 @@
     <div><Footer /></div>
   
   </main>
-  
+
 </template>
 
 <script>

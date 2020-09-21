@@ -15,9 +15,10 @@ export default {
 
 <style>
   .footer {
-    padding-top: calc(10em / 4);
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    font-size: 1em;
-    border: 1px solid rgb(111,41,97);
+    flex-shrink: 0;
   }
 </style>

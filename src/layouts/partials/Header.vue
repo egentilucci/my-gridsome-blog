@@ -2,7 +2,7 @@
   <div>
     <header class="layout-header">
       <nav class="nav">
-        <div class="logo">LOGO</div>
+        <g-link to="/" class="logo"><img src="../../favicon.png" width="22" height="22"></g-link>
         <div class="toggle-theme"><ToggleTheme /></div>
       </nav>
     </header>
@@ -25,13 +25,17 @@ export default {
     left: 0;
     margin: auto;
     width: 100%;
+    border: 1px solid rgb(111,41,97);
+    border-radius: .5em;
   }
   .nav {
     justify-content: space-between;
-    border: 1px solid rgb(111,41,97);
     padding: 5px;
     display: flex;
     align-items: center;
+    margin: 0px 68px;
+    border: 1px solid rgb(111,41,97);
+    border-radius: .5em;
   }
   .logo {
     padding: 5px;

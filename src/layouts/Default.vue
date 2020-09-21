@@ -57,7 +57,7 @@ export default {
   }
   .link {
     border: 2px dashed var(--border-color);
-    padding: 7px;
+    padding: 5px;
     color: var(--text-color);
     text-decoration: none;
   }
